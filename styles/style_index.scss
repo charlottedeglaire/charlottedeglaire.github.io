@@ -230,3 +230,51 @@ body {
         }
     }
 }
+
+
+@media screen and (min-width: 1100px) {
+    .catalog__bloc {
+        display: flex;
+    }
+    .catalog__title {
+        text-align: center;
+    }
+    .catalog__state {
+        margin: 20px 30px 0 30px;
+    }
+    .restaurants__cards {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        flex-wrap: wrap;
+        & > a {
+            width: 49%;
+        }
+    }
+    .footer {
+        margin-top: 0;
+        display: flex;
+        align-items: initial;
+        justify-content: initial;
+        &__logo {
+            text-align: center;
+        }
+        &__bloc {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            &-link {
+                margin: 0;
+                padding-right: 50px;
+            }
+            &-title {
+                padding-right: 50px;
+            }
+        }
+
+    }
+    .menu__bloc__piece {
+        width: 400px;
+        margin: 0 10px;
+    }
+}
