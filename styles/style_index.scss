@@ -35,3 +35,15 @@ body {
     text-decoration: none;
     color: white;
 }
+
+.header {
+    width: 100%;
+    background-color: white;
+    @include flexbox-center;
+    height: 70px;
+    position: relative;
+    box-shadow: 0px 5px 6px 0px rgba(0,0,0,0.20);
+    &__logo {
+        width: 180px;
+    }
+}
