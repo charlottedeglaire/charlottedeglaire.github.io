@@ -58,3 +58,29 @@ body {
         font-weight: 500;
     }
 }
+
+.hero {
+    width: 100%;
+    @include flexbox-center;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 25px;
+    padding-bottom: 60px;
+    &__title {
+        padding: 0 60px;
+        font-size: 25px;
+    }
+    &__text {
+        margin: 0;
+        font-weight: 300;
+    }
+    &__button {
+        margin-top: 30px;
+        @include button-style;
+        border: none;
+        padding: 15px 20px;
+        &:hover {
+            @include button-hover;
+        }
+    }
+}
