@@ -30,4 +30,24 @@ body {
 .header__logo {
   width: 180px;
 }
+
+.location {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #ececec;
+  color: #4b4b4b;
+}
+
+.location__city {
+  margin-left: 15px;
+  font-weight: 500;
+}
 /*# sourceMappingURL=style_index.css.map */

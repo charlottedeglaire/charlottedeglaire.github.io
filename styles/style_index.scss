@@ -47,3 +47,14 @@ body {
         width: 180px;
     }
 }
+
+.location {
+    width: 100%;
+    @include flexbox-center;
+    background: #ececec;
+    color: #4b4b4b;
+    &__city {
+        margin-left: 15px;
+        font-weight: 500;
+    }
+}
