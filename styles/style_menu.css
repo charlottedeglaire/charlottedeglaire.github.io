@@ -30,7 +30,7 @@ body {
 .header__icon {
   position: absolute;
   font-size: 23px;
-  left: 20;
+  left: 30px;
 }
 
 .header__icon > a {
