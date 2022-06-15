@@ -210,26 +210,16 @@ body {
         margin-bottom: 10px
     }
     &__bloc {
-        &-link {
-            @include flexbox-center;
-            justify-content: initial;
+        &-lists {
             color: white;
-            margin-top: 10px;
-            & > i {
-                width: 20px;
-                font-size: 15px;
-            }
-            &__title {
-                margin: 0 0 0 10px;
-                font-weight: 400;
-                font-size: 15px;
-            }
+            list-style: none;
+            padding-left: 0px;
         }
-        & > h3 {
-            color: white;
-            font-weight: 400;
-            margin: 10px 0;
-            font-size: 15px;
+        &-list {
+            margin-bottom: 10px;
+            & > a > i {
+                width: 30px
+            }
         }
     }
 }
