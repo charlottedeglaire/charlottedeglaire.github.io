@@ -53,7 +53,9 @@ body {
     @include flexbox-center;
     background: #ececec;
     color: #4b4b4b;
+    padding: 15px 0;
     &__city {
+        font-style: normal;
         margin-left: 15px;
         font-weight: 500;
     }
@@ -64,20 +66,20 @@ body {
     @include flexbox-center;
     flex-direction: column;
     text-align: center;
-    margin-top: 25px;
-    padding-bottom: 60px;
+    padding-bottom: 55px;
     &__title {
+        margin-top: 35px;
         padding: 0 60px;
         font-size: 25px;
     }
     &__text {
         margin: 0;
         font-weight: 300;
+        padding: 0 10px;
     }
     &__button {
         margin-top: 30px;
         @include button-style;
-        border: none;
         padding: 15px 20px;
         &:hover {
             @include button-hover;
@@ -132,21 +134,22 @@ body {
 }
 
 
-.restaurants {
+#restaurants {
     padding: 20px;
-    &__article {
-        width: 100%;
-        background-color: white;
-        border-radius: 20px;
-        margin-bottom: 25px;
-        &:hover {
-            box-shadow: 0px 0px 10px 2px rgba(147, 86, 220,0.6);
-        }
+}
+
+.restaurants__article {
+    width: 100%;
+    background-color: white;
+    border-radius: 20px;
+    margin-bottom: 25px;
+    &:hover {
+        box-shadow: 0px 0px 10px 2px rgba(147, 86, 220,0.6);
     }
-    &__cards {
-        & > a {
-            color: black;
-        }
+}
+.restaurants__cards {
+    & > a {
+        color: black;
     }
 }
 

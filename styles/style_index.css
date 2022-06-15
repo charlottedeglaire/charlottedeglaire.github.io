@@ -44,9 +44,11 @@ body {
           align-items: center;
   background: #ececec;
   color: #4b4b4b;
+  padding: 15px 0;
 }
 
 .location__city {
+  font-style: normal;
   margin-left: 15px;
   font-weight: 500;
 }
@@ -67,11 +69,11 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: center;
-  margin-top: 25px;
-  padding-bottom: 60px;
+  padding-bottom: 55px;
 }
 
 .hero__title {
+  margin-top: 35px;
   padding: 0 60px;
   font-size: 25px;
 }
@@ -79,6 +81,7 @@ body {
 .hero__text {
   margin: 0;
   font-weight: 300;
+  padding: 0 10px;
 }
 
 .hero__button {
@@ -91,7 +94,6 @@ body {
   border-radius: 200px;
   -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
           box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
-  border: none;
   padding: 15px 20px;
 }
 
@@ -169,7 +171,7 @@ body {
   background: #efe6fa;
 }
 
-.restaurants {
+#restaurants {
   padding: 20px;
 }
 
