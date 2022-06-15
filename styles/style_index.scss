@@ -89,50 +89,55 @@ body {
 
 .catalog {
     background-color: white;
-    padding: 30px 30px;
-    &__title {
-        margin-left: -10px;
-    }
-    &__state {
-        margin-top: 20px;
-        border-radius: 30px;
-        box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.16);
-        background-color: #f6f6f6;
-        @include flexbox-center;
-        justify-content: initial;
-        position: relative;
+    padding: 30px 20px;
+    &__lists {
+        padding-left: 10px;
+        counter-reset: catalog;
         width: 100%;
-        padding: 7px 0;
-        &:hover &-icon {
-            color: $color-primary;
-        }
-        &-number {
-            position: absolute;
-            background-color: $color-primary;
-            color: white;
-            padding: 3px 8px 3px 8px;
-            border-radius: 50%;
-            transform: translateX(-50%);
-        }
-        &-icon {
-            color: #7E7E7E;
-            margin: 0 0 0 30px;
-            font-size: 19px;
-            width: 40px;
-        }
-        &-text {
-            font-weight: 500;
-            font-size: 16px;
-        }
+    }
+    &__list {
+        position: relative;
+        display: flex;
+        list-style-type: none;
+        counter-increment: catalog;
+        background-color: #f6f6f6;
+        padding: 20px 0;
+        border-radius: 20px;
+        box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.16);
+        margin-bottom: 30px;
         &:hover {
             cursor: pointer;
             transition: .3s;
             background: lighten($color-primary, 34%);
         }
+        &:hover &-info__icon {
+            color: $color-primary;
+        }
+        &::before {
+            position: absolute;
+            content: counter(catalog); /* on affiche le compteur */
+            background: $color-primary;
+            border-radius: 60px;
+            color: white;
+            padding: 3px 7px 3px 7px;
+            border-radius: 50%;
+            font-size: 14px;
+            transform: translateX(-50%);
+        }
+        &-info {
+            display: flex;
+            &__icon {
+                margin: 0 0 0 30px;
+                width: 40px;
+                color: #7E7E7E;
+                font-size: 19px;
+            }
+            &__text {
+                font-weight: 500;
+            }
+        }
     }
-
 }
-
 
 #restaurants {
     padding: 20px;
