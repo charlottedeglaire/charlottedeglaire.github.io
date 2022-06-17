@@ -151,11 +151,23 @@ body {
           box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.1);
 }
 
+.case__link {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .case__content {
   width: 100%;
   margin-left: 10px;
   overflow: hidden;
   white-space: nowrap;
+  color: black;
 }
 
 .case__title {
