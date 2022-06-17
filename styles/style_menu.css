@@ -133,7 +133,6 @@ body {
 .case {
   margin-top: 20px;
   position: relative;
-  cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
