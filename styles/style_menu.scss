@@ -190,42 +190,34 @@ body {
     }
 }
 
+
 .footer {
-    margin-top: 80px;
+    margin-top: 50px;
     @include flexbox-center;
     flex-direction: column;
     align-items: flex-start;
     background-color: #353535;
-    padding: 0 0 30px 20px;
+    padding: 20px 0 30px 20px;
     &__logo {
         font-family: 'Shrikhand', cursive;
         font-size: 20px;
         margin-bottom: 10px
     }
     &__bloc {
-        &-link {
-            @include flexbox-center;
-            justify-content: initial;
+        &-lists {
             color: white;
-            margin-top: 10px;
-            & > i {
-                width: 20px;
-                font-size: 15px;
-            }
-            &__title {
-                margin: 0 0 0 10px;
-                font-weight: 400;
-                font-size: 15px;
-            }
+            list-style: none;
+            padding-left: 0px;
         }
-        & > h3 {
-            color: white;
-            font-weight: 400;
-            margin: 10px 0;
-            font-size: 15px;
+        &-list {
+            margin-bottom: 10px;
+            & > a > i {
+                width: 30px
+            }
         }
     }
 }
+
 
 
 @media screen and (min-width: 1100px) {
@@ -259,9 +251,11 @@ body {
     }
     .footer {
         margin-top: 0;
+        padding: 0px;
         display: flex;
+        height: 170px;
         align-items: initial;
-        justify-content: initial;
+        justify-content: center;
         &__logo {
             text-align: center;
         }
@@ -269,11 +263,10 @@ body {
             display: flex;
             justify-content: center;
             align-items: center;
-            &-link {
-                margin: 0;
-                padding-right: 50px;
+            &-lists {
+                display: flex;
             }
-            &-title {
+            &-list {
                 padding-right: 50px;
             }
         }
@@ -282,5 +275,54 @@ body {
     .menu__bloc__piece {
         width: 32%;
         margin: 0 10px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1099px) {
+    .menu__header-title {
+        font-size: 30px;
+    }
+    .menu__header-heart {
+        width: 30px;
+    }
+    .menu__bloc__title {
+        font-size: 20px;
+    }
+    .case__title {
+        font-size: 19px;
+    }
+    .case__info-subtitle {
+        font-size: 18px;
+    }
+    .case__info-price {
+        font-size: 18px;
+    }
+    .case__validation{
+        padding: 0 48px;
+        font-size: 24px;
+    }
+    .footer {
+        margin-top: 70px;
+        padding: 0px;
+        display: flex;
+        height: 150px;
+        align-items: initial;
+        justify-content: center;
+        &__logo {
+            text-align: center;
+        }
+        &__bloc {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            &-lists {
+                display: flex;
+            }
+            &-list {
+                padding: 0 25px;
+                font-size: 15px;
+            }
+        }
+
     }
 }
