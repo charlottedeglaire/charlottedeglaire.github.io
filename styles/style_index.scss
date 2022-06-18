@@ -340,3 +340,94 @@ body {
     }
 
 }
+
+@media screen and (min-width: 1900px) {
+    .header {
+        height: 150px;
+        &__logo {
+            width: 380px;
+        }
+    }
+    .location {
+        height: 80px;
+        &__icon {
+            font-size: 28px;
+        }
+        &__city {
+            font-size: 28px;
+        }
+    }
+    .hero {
+        &__title {
+            font-size: 48px;
+            margin: 50px 0 25px 0;
+        }
+        &__text {
+            font-size: 35px;
+        }
+        &__button {
+            font-size: 28px;
+            padding: 25px 30px;
+            margin-top: 50px;
+        }
+    }
+    .catalog {
+        &__title {
+            font-size: 45px;
+        }
+        &__list {
+            padding: 30px 0;
+            &-info__icon {
+                margin-left: 50px;
+                font-size: 35px;
+            }
+            &-info__text {
+                margin-left: 20px;
+                font-size: 35px;
+            }
+            &::before {
+                font-size: 30px;
+                padding: 8px 16px;
+                top: 25px;
+            }
+        }
+    }
+    .restaurants__title {
+        font-size: 45px;
+    }
+    .restaurant__block {
+        padding: 25px 30px;
+        &-name {
+            font-size: 35px;
+        }
+        &-city {
+            font-size: 30px;
+        }
+        &-heart {
+            width: 40px;
+        }
+    }
+    .restaurant__card {
+        &-image > img {
+            height: 350px;
+        }
+    }
+    .restaurants__article {
+        margin-bottom: 50px;
+    }
+    #restaurants {
+        padding: 20px 50px;
+    }
+    .footer {
+        height: 270px;
+        &__logo {
+            font-size: 40px;
+        }
+        &__bloc-list {
+            font-size: 30px;
+            & > a > i {
+                width: 50px;
+            }
+        }
+    }
+}
