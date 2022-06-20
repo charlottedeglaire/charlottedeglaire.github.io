@@ -184,6 +184,7 @@ body {
 
 .case__title {
   padding-right: 20px;
+  width: 100%;
   margin: 0;
   font-size: 17px;
   overflow: hidden;
@@ -212,6 +213,7 @@ body {
   margin: 5px 0 0 0;
   font-size: 15px;
   padding-right: 15px;
+  padding-left: 10px;
   font-weight: 700;
 }
 
@@ -248,6 +250,12 @@ body {
           animation: slide-left 0.5s ease;
   -webkit-transform-origin: right;
           transform-origin: right;
+}
+
+.case:hover .case__title {
+  width: 76%;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
 }
 
 .case:hover .case__info-price {
@@ -528,7 +536,7 @@ body {
     padding-right: 50px;
   }
   .menu__bloc__piece {
-    width: 32%;
+    min-width: 32%;
     margin: 0 10px;
   }
 }
@@ -555,6 +563,11 @@ body {
   .case__validation {
     padding: 0 48px;
     font-size: 24px;
+  }
+  .case:hover .case__info-price {
+    padding-right: 130px;
+    -webkit-transition: 0.5s ease;
+    transition: 0.5s ease;
   }
   .footer {
     margin-top: 70px;
@@ -643,6 +656,11 @@ body {
   .case__validation {
     font-size: 30px;
     padding: 0 30px;
+  }
+  .case:hover .case__info-price {
+    padding-right: 110px;
+    -webkit-transition: 0.5s ease;
+    transition: 0.5s ease;
   }
   .footer {
     margin-top: 30px;
