@@ -85,13 +85,21 @@ body {
             font-family: 'Shrikhand', cursive;
         }
         &-heart {
-            padding-right: 20px;
-            width: 25px;
-            stroke-width: 30;
-            stroke: black;
-            fill: white;
-            cursor: pointer;
-        }
+            margin-right: 10px;
+            font-size: 28px;
+             cursor: pointer;
+             & > i {
+                 font-weight: 300;
+                 &:hover {
+                     font-weight: 600;
+                     background: linear-gradient(210deg, rgba(147,86,220,1) 0%, rgba(255,121,218,1) 100%);
+                     background-clip: text;
+                     -webkit-background-clip: text;
+                     color: transparent;
+                     transition: 0.5s;
+                 }
+             }
+         }
     }
     &__bloc {
         padding: 0 20px;
@@ -128,6 +136,7 @@ body {
     border-radius: 15px;
     background-color: white ;
     box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.1);
+    animation: opacity 1s both;
     &__link {
         width: 100%;
         display: flex;
@@ -167,13 +176,29 @@ body {
         }
     }
     &__validation {
+        display: none;
+        position: absolute;
+        right: 0;
         background-color: $color-tertiary;
         color: white;
         font-size: 20px;
         border-radius: 0 15px 15px 0;
         padding: 0 18px;
         height: 100%;
+        & > i {
+            transform: rotate(180deg);
+            animation: rotate 0.5s both;
+        }
+    }
+    &:hover .case__validation {
         @include flexbox-center;
+        animation: slide-left 0.5s ease;
+        transform-origin: right;
+        
+    }
+    &:hover .case__info-price {
+        padding-right: 70px;
+        transition: 0.5s ease ;
     }
 }
 
@@ -189,8 +214,6 @@ body {
         }
     }
 }
-
-
 .footer {
     margin-top: 50px;
     @include flexbox-center;
@@ -219,6 +242,76 @@ body {
 }
 
 
+@keyframes slide-left {
+    0% {
+              transform: scaleX(0);
+    }
+    100% {
+              transform: scaleX(50px);
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+@keyframes opacity {
+    0% {
+              opacity: 0;
+              top: 15px;
+    }
+    80% {
+        opacity: 1;
+    }
+    100% {
+              top: 0px;
+    }
+}
+
+#case-1 {
+    animation-delay: 0.1s;
+}
+
+#case-2 {
+    animation-delay: 0.2s;
+}
+
+#case-3 {
+    animation-delay: 0.3s;
+}
+
+#case-4 {
+    animation-delay: 0.4s;
+}
+
+#case-5 {
+    animation-delay: 0.5s;
+}
+
+#case-6 {
+    animation-delay: 0.6s;
+}
+
+#case-7 {
+    animation-delay: 0.7s;
+}
+
+#case-8 {
+    animation-delay: 0.8s;
+}
+
+#case-9 {
+    animation-delay: 0.9s;
+}
+#case-10 {
+    animation-delay: 1s;
+}
 
 @media screen and (min-width: 1100px) {
     body {
@@ -348,7 +441,7 @@ body {
                 font-size: 40px;
             }
             &-heart {
-                width: 40px;
+                font-size: 50px;
             }
         }
         &__bloc {
