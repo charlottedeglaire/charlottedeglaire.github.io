@@ -456,12 +456,12 @@ body {
             width: 380px;
         }
     }
-    .location {
+    .hero__location {
         height: 80px;
-        &__icon {
+        &-icon {
             font-size: 28px;
         }
-        &__city {
+        &-city {
             font-size: 28px;
         }
     }
@@ -503,7 +503,7 @@ body {
     .restaurants__title {
         font-size: 45px;
     }
-    .restaurant__block {
+    .restaurants__block {
         padding: 25px 30px;
         &-name {
             font-size: 35px;
@@ -515,7 +515,7 @@ body {
             font-size: 50px;
         }
     }
-    .restaurant__card {
+    .restaurants__card {
         &-image > img {
             height: 350px;
         }

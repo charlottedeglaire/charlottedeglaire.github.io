@@ -616,13 +616,13 @@ body {
   .header__logo {
     width: 380px;
   }
-  .location {
+  .hero__location {
     height: 80px;
   }
-  .location__icon {
+  .hero__location-icon {
     font-size: 28px;
   }
-  .location__city {
+  .hero__location-city {
     font-size: 28px;
   }
   .hero__title {
@@ -659,22 +659,22 @@ body {
   .restaurants__title {
     font-size: 45px;
   }
-  .restaurant__block {
+  .restaurants__block {
     padding: 25px 30px;
   }
-  .restaurant__block-name {
+  .restaurants__block-name {
     font-size: 35px;
   }
-  .restaurant__block-city {
+  .restaurants__block-city {
     font-size: 30px;
   }
-  .restaurant__block-heart {
+  .restaurants__block-heart {
     font-size: 50px;
   }
-  .restaurant__card-image > img {
+  .restaurants__card-image > img {
     height: 350px;
   }
-  .restaurant__card-new {
+  .restaurants__card-new {
     font-size: 30px;
     padding: 15px 28px;
   }
