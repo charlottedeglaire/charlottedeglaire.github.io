@@ -300,9 +300,10 @@ body {
   background: linear-gradient(210deg, #9356dc 0%, #ff79da 100%);
   background-clip: text;
   -webkit-background-clip: text;
+  -moz-background-clip: text;
   color: transparent;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-transition: 0.5s ease-in;
+  transition: 0.5s ease-in;
 }
 
 /* FOOTER */
@@ -442,8 +443,8 @@ body {
 }
 
 .container div:nth-child(4) {
-  -webkit-animation-delay: 0.8s;
-          animation-delay: 0.8s;
+  -webkit-animation-delay: 0.9s;
+          animation-delay: 0.9s;
 }
 
 .container div:nth-child(5) {
